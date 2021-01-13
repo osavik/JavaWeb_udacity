@@ -23,4 +23,16 @@ public class ChatForm {
     public String getMessageType() {
         return messageType;
     }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setMessageText(String messageText) {
+        this.messageText = messageText;
+    }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
+    }
 }

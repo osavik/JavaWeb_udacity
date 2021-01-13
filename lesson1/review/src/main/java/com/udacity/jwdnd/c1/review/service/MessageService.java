@@ -1,5 +1,6 @@
 package com.udacity.jwdnd.c1.review.service;
 
+import com.udacity.jwdnd.c1.review.model.ChatForm;
 import com.udacity.jwdnd.c1.review.model.ChatMessage;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,8 @@ import java.util.List;
 public class MessageService {
 
     private List <ChatMessage> chatMessages;
+
+    private String bannedWords[] = new String[] {"badword1", "badword2"};
 
     public MessageService() {
     }
@@ -24,8 +27,33 @@ public class MessageService {
         return chatMessages;
     }
 
-    public void addMessage(ChatMessage message){
-        chatMessages.add(message);
+    public void addMessage(ChatForm chatForm){
+        if (validateMessage(chatForm.getMessageText())){
+            String messageText = caseModifier(chatForm.getMessageType(), chatForm.getMessageText());
+            ChatMessage chatMessage = new ChatMessage(chatForm.getUserName(), messageText);
+            chatMessages.add(chatMessage);
+        }
+    }
+
+    private String caseModifier(String modifier, String original){
+
+        switch (modifier){
+            case "Shout":
+                return original.toUpperCase();
+            case "Whisper":
+                return original.toLowerCase();
+            default:
+                return original;
+        }
+    }
+
+    private boolean validateMessage(String original){
+        for (String word : bannedWords){
+            if (original.contains(word))
+                return false;
+        }
+
+        return true;
     }
 
     /*
@@ -50,9 +78,5 @@ public class MessageService {
         System.out.println("Bean MessageService is created (post constructor)");
     }
     */
-
-
-
-
 
 }

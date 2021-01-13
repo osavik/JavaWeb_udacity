@@ -1,27 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>shokak</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" rel="stylesheet">
+    <title>Messenger</title>
 </head>
 <body>
-    <form>
-        <label for="username">Username:</label>
-        <input id="username" type="text">
-        <label for="messageText">Message Text:</label>
-        <input id="messageText" type="text">
-        <label for="messageType">Message Type: </label>
-        <select id="messageType">
-            <option selected>Say</option>
-            <option>Shout</option>
-            <option>Whisper</option>
-        </select>
-        <input type="submit">
-    </form>
 
+<form action="#" class="form-example" method="post" th:action="@{'/chat'}" th:object="${chatForm}">
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input id="username" th:field="*{userName}" type="text">
+    </div>
+    <div class="form-group">
+        <label for="messageText">Message Text:</label>
+        <input id="messageText" th:field="*{messageText}" type="text">
+    </div>
+    <div class="form-group">
+        <label for="messageType">Message Type: </label>
+        <select id="messageType" th:field="*{messageType}">
+            <option
+                    th:each="type: ${allMessageTypes}"
+                    th:text="${type}"
+                    th:value="${type}">
+            </option>
+        </select>
+    </div>
+    <input class="btn btn-primary btn-customized" type="submit">
+</form>
+
+
+<h1>Messages:</h1>
+<p th:each="msg : ${messages}" th:text="${msg.userName + ': ' + msg.messageText}"></p>
+
+
+<script crossorigin="anonymous" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
