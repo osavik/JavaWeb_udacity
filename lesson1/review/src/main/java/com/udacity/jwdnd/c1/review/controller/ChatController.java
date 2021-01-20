@@ -30,7 +30,6 @@ public class ChatController {
     public String submitMessage(ChatForm chatForm, Model model){
         messageService.addMessage(chatForm);
         chatForm.setMessageText("");
-        chatForm.setUserName("");
         model.addAttribute("messages", messageService.getChatMessages());
         return "chat";
     }
