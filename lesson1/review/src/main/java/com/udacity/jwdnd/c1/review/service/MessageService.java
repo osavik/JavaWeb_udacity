@@ -1,5 +1,6 @@
 package com.udacity.jwdnd.c1.review.service;
 
+import com.udacity.jwdnd.c1.review.mapper.ChatMessageMapper;
 import com.udacity.jwdnd.c1.review.model.ChatForm;
 import com.udacity.jwdnd.c1.review.model.ChatMessage;
 import org.springframework.stereotype.Service;
@@ -11,27 +12,32 @@ import java.util.List;
 @Service
 public class MessageService {
 
-    private List <ChatMessage> chatMessages;
+    private ChatMessageMapper chatMessageMapper;
+
+    //private List <ChatMessage> chatMessages;
 
     private String bannedWords[] = new String[] {"badword1", "badword2"};
 
-    public MessageService() {
+    public MessageService(ChatMessageMapper chatMessageMapper) {
+        this.chatMessageMapper = chatMessageMapper;
     }
 
+    /*
     @PostConstruct
     public void postConstruct(){
         chatMessages = new ArrayList<>();
     }
+    */
 
     public List<ChatMessage> getChatMessages() {
-        return chatMessages;
+        return chatMessageMapper.getAllMessages();
     }
 
     public void addMessage(ChatForm chatForm){
         if (validateMessage(chatForm.getMessageText())){
             String messageText = caseModifier(chatForm.getMessageType(), chatForm.getMessageText());
-            ChatMessage chatMessage = new ChatMessage(chatForm.getUserName(), messageText);
-            chatMessages.add(chatMessage);
+            ChatMessage chatMessage = new ChatMessage(null, chatForm.getUserName(), messageText);
+            chatMessageMapper.insert(chatMessage);
         }
     }
 

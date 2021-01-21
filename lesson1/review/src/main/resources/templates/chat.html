@@ -12,15 +12,11 @@
 <body>
 
 <form action="#" class="form-example" method="post" th:action="@{'/chat'}" th:object="${chatForm}">
-    <div class="form-group">
-        <label for="username">Username:</label>
-        <input id="username" th:field="*{userName}" type="text">
-    </div>
-    <div class="form-group">
+    <div class="form-group" style="margin: 1em;">
         <label for="messageText">Message Text:</label>
         <input id="messageText" th:field="*{messageText}" type="text">
     </div>
-    <div class="form-group">
+    <div class="form-group" style="margin: 1em;">
         <label for="messageType">Message Type: </label>
         <select id="messageType" th:field="*{messageType}">
             <option
@@ -30,7 +26,11 @@
             </option>
         </select>
     </div>
-    <input class="btn btn-primary btn-customized" type="submit">
+    <input class="btn btn-primary btn-customized" type="submit" style="margin: 1em;">
+</form>
+
+<form action="#" class="form-example" name="logoutForm" th:action="@{/logout}" method="post"  style="margin: 1em;">
+    <input class="btn btn-primary btn-customized" type="submit" value="Sign Out"/>
 </form>
 
 
