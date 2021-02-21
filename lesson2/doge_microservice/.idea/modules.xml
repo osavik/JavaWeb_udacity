@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/doge/doge.iml" filepath="$PROJECT_DIR$/doge/doge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/doge_microservice.iml" filepath="$PROJECT_DIR$/.idea/doge_microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka_doge/eureka_doge.iml" filepath="$PROJECT_DIR$/eureka_doge/eureka_doge.iml" />
+    </modules>
+  </component>
+</project>
