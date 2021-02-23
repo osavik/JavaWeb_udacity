@@ -1,5 +1,6 @@
 package com.example.consuming;
 
+import com.example.consuming.entity.Dog;
 import com.example.consuming.entity.Joke;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,6 +31,11 @@ public class ConsumingApplication {
 			Joke joke = restTemplate.getForObject(
 					"https://official-joke-api.appspot.com/random_joke", Joke.class);
 			log.info(joke.toString());
+
+
+			Dog dog = restTemplate.getForObject(
+					"https://dog.ceo/api/breeds/image/random", Dog.class);
+			log.info(dog.getMessage()+" "+dog.getStatus());
 		};
 	}
 

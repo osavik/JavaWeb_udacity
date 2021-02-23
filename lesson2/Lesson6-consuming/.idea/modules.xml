@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lesson6-consuming.iml" filepath="$PROJECT_DIR$/.idea/Lesson6-consuming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming soap/consuming/consuming.iml" filepath="$PROJECT_DIR$/consuming soap/consuming/consuming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming rest apis/consuming/consuming (1).iml" filepath="$PROJECT_DIR$/consuming rest apis/consuming/consuming (1).iml" />
+    </modules>
+  </component>
+</project>
