@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1622773c-8a24-4bfa-9dcf-1bdb9311d366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dogerest/src/main/java/com/udacity/dogerest/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document.iml" beforeDir="false" afterPath="$PROJECT_DIR$/document.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/document/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/document/config/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogerest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dogerest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogerest/src/main/java/com/udacity/dogerest/web/DogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dogerest/src/main/java/com/udacity/dogerest/web/DogController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +21,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -39,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dogerest" />
   </component>
   <component name="RunManager">
     <configuration name="DocumentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -73,21 +68,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1289" height="208" key="GridCell.Tab.0.bottom" timestamp="1614159877054">
-      <screen x="46" y="23" width="1394" height="877" />
+    <state x="684" y="316" key="FileChooserDialogImpl" timestamp="1614165491545">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="684" y="316" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614165491545" />
+    <state width="1504" height="261" key="GridCell.Tab.0.bottom" timestamp="1614166608872">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1504" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614162366100" />
+    <state width="1504" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614166608872" />
     <state width="1289" height="208" key="GridCell.Tab.0.bottom/46.23.1394.877@46.23.1394.877" timestamp="1614159877054" />
-    <state width="1289" height="208" key="GridCell.Tab.0.center" timestamp="1614159877053">
-      <screen x="46" y="23" width="1394" height="877" />
+    <state width="1504" height="261" key="GridCell.Tab.0.center" timestamp="1614166608872">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1504" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614162366100" />
+    <state width="1504" height="261" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614166608872" />
     <state width="1289" height="208" key="GridCell.Tab.0.center/46.23.1394.877@46.23.1394.877" timestamp="1614159877053" />
-    <state width="1289" height="208" key="GridCell.Tab.0.left" timestamp="1614159877052">
-      <screen x="46" y="23" width="1394" height="877" />
+    <state width="1504" height="261" key="GridCell.Tab.0.left" timestamp="1614166608872">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1504" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614162366099" />
+    <state width="1504" height="261" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614166608872" />
     <state width="1289" height="208" key="GridCell.Tab.0.left/46.23.1394.877@46.23.1394.877" timestamp="1614159877052" />
-    <state width="1289" height="208" key="GridCell.Tab.0.right" timestamp="1614159877053">
-      <screen x="46" y="23" width="1394" height="877" />
+    <state width="1504" height="261" key="GridCell.Tab.0.right" timestamp="1614166608872">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1504" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614162366100" />
+    <state width="1504" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614166608872" />
     <state width="1289" height="208" key="GridCell.Tab.0.right/46.23.1394.877@46.23.1394.877" timestamp="1614159877053" />
   </component>
 </project>
