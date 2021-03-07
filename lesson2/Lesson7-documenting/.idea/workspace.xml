@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1622773c-8a24-4bfa-9dcf-1bdb9311d366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dogerest/src/main/java/com/udacity/dogerest/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson4-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson4-microservices/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dogerest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dogerest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dogerest/src/main/java/com/udacity/dogerest/web/DogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dogerest/src/main/java/com/udacity/dogerest/web/DogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doge_microservice/doge/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../doge_microservice/doge/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka_doge/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +21,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -34,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dogerest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="DocumentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
