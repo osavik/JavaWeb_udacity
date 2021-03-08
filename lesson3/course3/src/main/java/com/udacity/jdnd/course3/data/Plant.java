@@ -1,5 +1,7 @@
 package com.udacity.jdnd.course3.data;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.udacity.jdnd.course3.controller.View;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
@@ -13,9 +15,11 @@ public class Plant {
     @GeneratedValue
     private Long id;
 
+    @JsonView(View.Public.class)
     @Nationalized
     private String name;
 
+    @JsonView(View.Public.class)
     @Column(precision=12, scale=4)
     private BigDecimal price;
 
