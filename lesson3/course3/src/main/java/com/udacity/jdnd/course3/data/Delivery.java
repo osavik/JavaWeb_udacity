@@ -25,7 +25,7 @@ public class Delivery {
     @Type(type= "yes_no")
     private boolean isCompleted;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "delivery")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "delivery", cascade = CascadeType.REMOVE)
     private List<Plant> plants;
 
     public List<Plant> getPlants() {
