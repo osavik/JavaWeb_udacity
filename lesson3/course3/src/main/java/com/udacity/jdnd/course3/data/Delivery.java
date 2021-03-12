@@ -1,11 +1,16 @@
 package com.udacity.jdnd.course3.data;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.Nationalized;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
+
+@NamedQuery(
+        name = "Delivery.findByRecipientName",
+        query = "select d from Delivery d where d.recipientName = :recipientName")
 
 @Entity
 public class Delivery {
@@ -20,12 +25,13 @@ public class Delivery {
     @Column(name = "address_full", length = 500)
     private String address;
 
-    private LocalDateTime deliveryTate;
+    private LocalDateTime deliveryDate;
 
     @Type(type= "yes_no")
     private boolean isCompleted;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "delivery", cascade = CascadeType.REMOVE)
+    @JsonManagedReference
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "delivery", cascade = CascadeType.ALL)
     private List<Plant> plants;
 
     public List<Plant> getPlants() {
@@ -52,12 +58,12 @@ public class Delivery {
         this.address = address;
     }
 
-    public LocalDateTime getDeliveryTate() {
-        return deliveryTate;
+    public LocalDateTime getDeliveryDate() {
+        return deliveryDate;
     }
 
-    public void setDeliveryTate(LocalDateTime deliveryTate) {
-        this.deliveryTate = deliveryTate;
+    public void setDeliveryDate(LocalDateTime deliveryDate) {
+        this.deliveryDate = deliveryDate;
     }
 
     public boolean isCompleted() {

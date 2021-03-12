@@ -1,5 +1,6 @@
 package com.udacity.jdnd.course3.data;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.udacity.jdnd.course3.controller.View;
 import org.hibernate.annotations.Nationalized;
@@ -23,6 +24,7 @@ public class Plant {
     @Column(precision=12, scale=4)
     private BigDecimal price;
 
+    @JsonBackReference
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
@@ -49,5 +51,13 @@ public class Plant {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public Delivery getDelivery() {
+        return delivery;
+    }
+
+    public void setDelivery(Delivery delivery) {
+        this.delivery = delivery;
     }
 }
