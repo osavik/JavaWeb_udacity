@@ -43,6 +43,12 @@ public class DeliveryRepository {
         entityManager.remove(deliveryToDelete);
     }
 
+    public Delivery changeDeliveryStatus(Long id, Boolean status){
+        Delivery delivery = entityManager.find(Delivery.class, id);
+        delivery.setCompleted(status);
+        return delivery;
+    }
+
     public List<Delivery> findDeliveriesByRecipientName(String recipientName){
         TypedQuery<Delivery> query = entityManager.createNamedQuery(
                 "Delivery.findByRecipientName", Delivery.class);

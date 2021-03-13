@@ -37,6 +37,13 @@ public class DeliveryController {
         return new ResponseEntity<RecipientAndPriceDTO>(recipientAndPriceDTO, HttpStatus.OK);
     }
 
+    @PutMapping("/status/{id}/{newstatus}")
+    public ResponseEntity<Delivery> changeDeliveryStatus(@PathVariable Long id, @PathVariable Boolean newstatus){
+        Delivery delivery = deliveryService.changeDeliveryStatus(id, newstatus);
+
+        return new ResponseEntity<Delivery>(delivery, HttpStatus.OK);
+    }
+
 
 
 }

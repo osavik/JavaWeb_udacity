@@ -3,6 +3,7 @@ package com.udacity.jdnd.course3.data;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.Nationalized;
 import org.hibernate.annotations.Type;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -28,6 +29,7 @@ public class Delivery {
     private LocalDateTime deliveryDate;
 
     @Type(type= "yes_no")
+    //@Column(columnDefinition = "boolean default true")
     private boolean isCompleted;
 
     @JsonManagedReference

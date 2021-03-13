@@ -27,4 +27,8 @@ public class DeliveryService {
         return deliveryRepository.findByRecipientNameAndDeliveryPriceSum(deliveryId);
     }
 
+    public Delivery changeDeliveryStatus(Long id, Boolean status){
+        return deliveryRepository.changeDeliveryStatus(id, status);
+    }
+
 }
